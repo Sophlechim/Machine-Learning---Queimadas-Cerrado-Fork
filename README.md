@@ -14,7 +14,10 @@ Por fim, decidimos que, a partir desses dados e fatores analisados, tentaríamos
 Uma das grandes discussões realisadas pelo nosso grupo foi quais recortes utilizaríamos para desenvolver o projeto. Acabamos por decidir o Bioma Cerrado, que é o segundo bioma mais afetado por queimadas e todo o brasil e sobre o qual há muitos dados disponíveis para estudo.
 </p>
 </details>
+
 ## Dividindo tarefas
 <details><summary>Divisões</summary>
 <p>
 Ao analisar a lista de tarefas para o Bloco 1 de Aprendizado de Máquina, decidimos que seria válido que cada uma das integrantes ficasse responsável com um dos tópicos da lista. Ao final, o trabalho foi realizado de maneira bem mais conjunta do que o previsto, já que nós nos ajudamos umas as outras durante o processo!
+</p>
+</details>
