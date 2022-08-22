@@ -24,6 +24,7 @@ Ao analisar a lista de tarefas para o Bloco 1 de Aprendizado de Máquina, decidi
 <details><summary>Coleta de Dados</summary>
 <p>
 Durante, principalmente, as primeiras duas semanas desde a definição do nosso tema, pesquisamos intensamente por bancos de dados e APIa que nos auxiliassem no desenvolvimento do nosso sistema de aprendizado de máquina. Priorizamos dados confiáveis e em formatos que facilitassem a manipulação pelo jupyter na linguagem python. Concluímos, por fim, appos discusões com nossos professores, que os dados do INPE eram de fato os mais seguros e também os mais completos para se trabalhar, contendo neles não apenas a localização exata das queimadas, como também o risco de fogo, o bioma ao qual aquela região pertence, a precipitação, o número de dias sem chuva, entre outros.
+ <br>
 Coletamos, pois, todos os dados de queimadas do INPE desde o começo de 2022 até julho de 2022. Esse conjunto de dados, para nossa surpresa, não incluía somente informações sobre o Brasil, mas sobre o mundo inteiro. Por isso, na tarefa seguinte (de preparação), foi essencial que filtrássemos os dados.
 </p>
 </details>
