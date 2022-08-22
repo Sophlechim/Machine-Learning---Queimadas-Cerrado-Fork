@@ -1,4 +1,6 @@
-# Machine-Learning--- Risco de Fogo: Um olhar para as queimadas do Cerrado
+# Risco de Fogo
+<hr> 
+### Um olhar para os focos de incêndio do Cerrado Brasileiro por intermédio de Machine Learning
 ## Definindo o tema do projeto
 <details><summary>Objeto de Análise</summary>
 <p>
