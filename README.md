@@ -1,4 +1,4 @@
-# Machine-Learning---Ilum-Project
+# Machine-Learning--- Risco de Fogo: Um olhar para as queimadas do Cerrado
 ## Definindo o tema do projeto
 <details><summary>Objeto de Análise</summary>
 <p>
