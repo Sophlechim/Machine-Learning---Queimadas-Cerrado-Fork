@@ -15,6 +15,12 @@ Este projeto foi elaborado pelas estudantes durante o segundo semestre de gradua
 <p> :heavy_check_mark: Sofia Baccega C.C. de Oliveira </p>
 <p> :heavy_check_mark: Sophia Figueiredo Michel </p>
 
+<details><summary><b>Como se guiar no nosso GitHub?</b></summary>
+<p align="justify">
+É bem simples! Para acessar os nossos dados trabalhados em .csv, deve-se entrar na pasta "Dados Pré-Processados do INPE" disponível no GitHub, e para acessar as tarefas realizadas na primeira etapa, deve-se acessar a pasta "Bloco 1", arquivo disponível que foi desenvolvido no JupyterNotebook.
+</p>
+</details>
+
 ## Processo Metodológico
 <details><summary><b>Objeto de Análise</b></summary>
 <p align="justify">
@@ -57,10 +63,4 @@ Após todo o processo de coleta, filtragem e preparação dos dados, pudemos fin
 </p>
 </details>
 
-</details>
-<details><summary><b>Como se guiar no nosso GitHub?</b></summary>
-<p align="justify">
-É bem simples! Para acessar os nossos dados trabalhados em .csv, deve-se entrar na pasta "Dados Pré-Processados do INPE" disponível no GitHub, e para acessar as tarefas realizadas no Bloco 1, deve-se acessar a pasta "Bloco 1", arquivo disponível desenvolvido no JupyterNotebook.
-</p>
-</details>
  Status do Projeto: Em desenvolvimento :warning:
