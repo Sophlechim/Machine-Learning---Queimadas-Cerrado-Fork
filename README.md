@@ -54,7 +54,7 @@ Coletamos, pois, todos os dados de queimadas do INPE desde o começo de 2022 at�
 </details>
 <details><summary><b>Preparação dos Dados</b></summary>
 <p align="justify">
-......
+Em um primeiro momento, identifica-se os tipos de dados, em nosso caso, são todos do tipo float. Os dados foram normalizados, como o caso do número de dias sem chuva e a precipitação, utilizando o máximo e o mínimo dos valores para que todos os dados fiquem na mesma escala. Posteriormente, os dados começaram a ser analisados.  
 </p>
 </details>
 <details><summary><b>Análise Exploratória dos Dados</b></summary>
