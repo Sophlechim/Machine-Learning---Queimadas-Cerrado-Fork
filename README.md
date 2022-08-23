@@ -53,7 +53,7 @@ Coletamos, pois, todos os dados de queimadas do INPE desde o começo de 2022 at�
 </details>
 <details><summary><b>Análise Exploratória dos Dados</b></summary>
 <p align="justify">
-.....
+Após todo o processo de coleta, filtragem e preparação dos dados, pudemos finalmente analisar tudo o que conseguimos obter através do nosso DataFrame. Os resultados que esperamos ter, devem demonstrar que meses em que existe uma baixa taxa de umidade do ar tendem a ter probabilidades mais altas de queimas em pontos da região, além de também procurarmos ter uma correlação entre os fatores de precipitação e os níveis de risco de fogo, que poderão ser previstos. Assim, a utilização de comandos de matrizes de covariância e correlação é imprescíndível para explorar e computar essas probabilidades, podendo, ao final, gerar gráficos que apresentam tais taxas e variações.
 </p>
 </details>
  Status do Projeto: Em desenvolvimento :warning:
