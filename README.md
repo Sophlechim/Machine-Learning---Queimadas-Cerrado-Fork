@@ -4,7 +4,7 @@
 
 ## Descrição do Projeto
 <p align="justify">
-O presente projeto busca desenvolver por meio de Machine Learning, um sistema de previsões de focos de incêndio no Cerrado brasileiro. Em um primeiro momento, a target analisada foi o Risco de Fogo sendo atribuídas variáveis da climatologia local, com informações a respeito da precipitação, dias sem chuva, umidade e localização geográfica, todos os dados obtidos foram por meio das APIs e Databases do INPE - Instituto Nacional de Pesquisas Espacias. 
+O presente projeto busca desenvolver por meio de Machine Learning, um sistema de previsões de focos de incêndio no Cerrado brasileiro. Em um primeiro momento, a target analisada foi o Risco de Fogo sendo atribuídas variáveis da climatologia local, com informações a respeito da precipitação, dias sem chuva e localização geográfica, todos os dados obtidos foram por meio das APIs e Databases do INPE - Instituto Nacional de Pesquisas Espacias. 
 </p>
 <p align="justify">
 Esse repositório tem como intuito demonstrar o processo metodológico utilizado para o desenvolvimento da pesquisa. Inicialmente, as desenvolvedoras definiram um objeto de estudo de interesse coletivo e posteriormente, realizaram a coleta dos dados e a sua análise para a obtenção de uma representação gráfica acerca das informações adquiridas. Como citado, o objeto de estudo é referente aos focos de incêndio que tem se expandido, em especial, no território do Cerrado, em que, normalmente, a responsável por tal é a atividade agrícola. Entretanto, nos últimos anos, efeitos de mundanças climáticas tem aumento as probabilidades dos focos.</p>
@@ -53,7 +53,14 @@ Coletamos, pois, todos os dados de queimadas do INPE desde o começo de 2022 at�
 </details>
 <details><summary><b>Análise Exploratória dos Dados</b></summary>
 <p align="justify">
-Após todo o processo de coleta, filtragem e preparação dos dados, pudemos finalmente analisar tudo o que conseguimos obter através do nosso DataFrame. Os resultados que esperamos ter, devem demonstrar que meses em que existe uma baixa taxa de umidade do ar tendem a ter probabilidades mais altas de queimas em pontos da região, além de também procurarmos ter uma correlação entre os fatores de precipitação e os níveis de risco de fogo, que poderão ser previstos. Assim, a utilização de comandos de matrizes de covariância e correlação é imprescíndível para explorar e computar essas probabilidades, podendo, ao final, gerar gráficos que apresentam tais taxas e variações.
+Após todo o processo de coleta, filtragem e preparação dos dados, pudemos finalmente analisar tudo o que conseguimos obter através do nosso DataFrame. Os resultados que esperamos ter, devem demonstrar que meses em que existe uma baixa taxa de precipitação tendem a ter probabilidades mais altas de queimas em pontos da região, além de também procurarmos ter uma correlação entre os fatores de precipitação e os níveis de risco de fogo, que poderão ser previstos. Assim, a utilização de comandos de matrizes de covariância e correlação é imprescíndível para explorar e computar essas probabilidades, podendo, ao final, gerar gráficos que apresentam tais taxas e variações.
+</p>
+</details>
+
+</details>
+<details><summary><b>Como se guiar no nosso GitHub?</b></summary>
+<p align="justify">
+É bem simples! Para acessar os nossos dados trabalhados em .csv, deve-se entrar na pasta "Dados Pré-Processados do INPE" disponível no GitHub, e para acessar as tarefas realizadas no Bloco 1, deve-se acessar a pasta "Bloco 1", arquivo disponível desenvolvido no JupyterNotebook.
 </p>
 </details>
  Status do Projeto: Em desenvolvimento :warning:
