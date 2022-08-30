@@ -63,4 +63,19 @@ Após todo o processo de coleta, filtragem e preparação dos dados, pudemos fin
 </p>
 </details>
 
+## Bloco 2
+<details><summary><b>Treino, teste e baseline</b></summary>
+</details>
+<details><summary><b>Treinamento da baseline de <i>k</i> vizinhos mais próximos</b></summary>
+</details>
+<details><summary><b>Regressão linear</b></summary>
+</details>
+<details><summary><b>Árvore de decisão</b></summary>
+</details>
+<details><summary><b>Floresta aleatória</b></summary>
+</details>
+<details><summary><b>Comparando os desempenhos dos modelos de regressão</b></summary>
+</details>
+<details><summary><b>Classificação</b></summary>
+</details>
  Status do Projeto: Em desenvolvimento :warning:
