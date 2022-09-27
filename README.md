@@ -17,7 +17,7 @@ Este projeto foi elaborado pelas estudantes durante o segundo semestre de gradua
 
 <details><summary><h3><b>Como se guiar no nosso GitHub?</h3></b></summary>
 <p align="justify">
-É bem simples! Para acessar os nossos dados trabalhados em .csv, deve-se entrar na pasta "Dados Pré-Processados do INPE" disponível no GitHub, e para acessar as tarefas realizadas na primeira etapa, deve-se acessar a pasta "Bloco 1", arquivo disponível que foi desenvolvido no JupyterNotebook.
+É bem simples! Na pasta "Dados Pré-Processados do INPE" disponível no GitHub, é realizado um tratamento inicial nos dados que resultam em nossos datasets  em .csv representados com o mes que se refere ao conjunto de dados. Além disso, de modo para acessar as tarefas realizadas na primeira etapa, deve-se acessar a pasta "Bloco 1", e para compreensão dos modelos de treino, acessem a pasta "Bloco 2", arquivo disponível que foi desenvolvido no JupyterNotebook.
 </p>
 </details>
 
@@ -95,6 +95,7 @@ Este modelo pode ser compreendido como uma complementaridade ao modelo de Árvor
 <details><summary><b>Comparando os desempenhos dos modelos de regressão</b></summary>
 </details>
 <details><summary><b>Classificação</b></summary>
+O metódo de classificação utilizado foi o K-NN. Em um primeiro momento, necessita-se de dados categóricos, por isso, desenvlve-se uma coluna de classificação categória sobre as chances do risco de fogo. Após esta criação, aplica-se o metódo de classificação e análisa sua accuracy.  
 </details>
 <details><summary><b>Bloco 2 - Teste.ipynb</b></summary>
 <p align="justify">
