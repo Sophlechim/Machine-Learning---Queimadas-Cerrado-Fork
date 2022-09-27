@@ -112,7 +112,10 @@ Para comparar os cinco modelos preditivos desenvolvidos, comparamos os valores d
 | Regressão  | 0,23769020     | 0,2370621     |
 | Árvore     | 0,08           | 0,08          |
 | Floresta   | 0,066630042    | 0,0667153531  |
- 
+</p>
+Podemos perceber, pois, que tanto para o s dados normalizados quanto para os dados não normalizados, os melhores modelos preditivos (isto é, os que resultam em melhor previsão) são os de FLoresta aleatória e o de K-NN. 
+</p>
+Direcionando nosso olhar para o K-NN, podemos perceber, também, que os melhores resultados desse modelo são obtidos com menores números de vizinhos selecionados. Isso ocorre pois, no caso dos nossos dados, quando realizamos o modelo K-NN com uma grande quantidade de vizinhos, nós estamos nos "afastando" muito da área que está sendo utilizada para predição, o que torna as previsões menos precisas. A gráfico presente no notebook "Bloco 2" mostra exatamente como o erro desse modelo cresce conforme aumentamos o número de vizinhos analisados.
 </details>
 <details><summary><b>Classificação</b></summary>
 O metódo de classificação utilizado foi o K-NN. Em um primeiro momento, necessita-se de dados categóricos, por isso, desenvlve-se uma coluna de classificação categória sobre as chances do risco de fogo. Após esta criação, aplica-se o metódo de classificação e análisa sua accuracy.  
