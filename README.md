@@ -65,11 +65,17 @@ Após todo o processo de coleta, filtragem e preparação dos dados, pudemos fin
 
 ## Bloco 2
 <p align="justify">
-A partir desse momento, recebemos a sujestão de separar os dados em normalizados e não normalizados e achamos interessante acatar a ideia para analisar como os dados se comportam em diferentes circunstâncias
+O Bloco 2 tem como intuito, realizar a aplicação de técnicas de modelo de Machine Learning, de modo a identificar qual modelo combina melhor com o código e dataset usufruido. De modo a analisar as divergências de cada técnica e a interferência dos dados normalizados e não-normalizados, desenvolve-se um Jupyter Notebook dividido em duas grandes seções: Treino com dados normalizados e Treino com dados não-normalizados. 
 </p>
 <details><summary><b>Treino, teste e baseline</b></summary>
+<p align="justify">
+De modo a iniciar os treinos dos modelos, inicia-se com o modelo mais básico e que será um valor de referência aos demais: o modelo Baseline! Este modelo realiza uma média dos valores da target e geralmente, não apresenta bom resultado preventivo. Utilizamos o RMSE como métrica, obtendo um valor de 25% de erro de predição.
+</p>
 </details>
 <details><summary><b>Treinamento de modelo de <i>k</i> vizinhos mais próximos</b></summary>
+<p align="justify">
+
+</p>
 </details>
 <details><summary><b>Regressão linear</b></summary>
 </details>
