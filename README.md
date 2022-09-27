@@ -64,13 +64,19 @@ Após todo o processo de coleta, filtragem e preparação dos dados, pudemos fin
 </details>
 
 ## Bloco 2
+<p align="justify">
+A partir desse momento, recebemos a sujestão de separar os dados em normalizados e não normalizados e achamos interessante acatar a ideia para analisar como os dados se comportam em diferentes circunstâncias
+</p>
 <details><summary><b>Treino, teste e baseline</b></summary>
 </details>
-<details><summary><b>Treinamento da baseline de <i>k</i> vizinhos mais próximos</b></summary>
+<details><summary><b>Treinamento de modelo de <i>k</i> vizinhos mais próximos</b></summary>
 </details>
 <details><summary><b>Regressão linear</b></summary>
 </details>
 <details><summary><b>Árvore de decisão</b></summary>
+<p align="justify">
+Seguindo a série de treinamentos de modelos, introduzimos o algoritmo de árvore de decisão para descobrir a performance desse modelo e compará-la em relação aos outros modelos, podendo observar que é melhor que os modelos anteriormente treinados. Definidos hiperparâmetros para a árvore para reduzir 'overfittings' criados a partir das diferenças entre os dados treinados e não treinados, foi possível perceber que tanto o número de 'nodes' quanto a profundidade da nossa árvore afetam na complexidade e performance do nosso modelo. Ao alterá-los, com a intenção de evitar ajustes excessivos, pode-se concluir que o comportamento do erro quadrático médio não possui grande variação conforme definimos diferentes valores de hiperparâmetro de curtos intervalos de diferença.
+</p>
 </details>
 <details><summary><b>Floresta aleatória</b></summary>
 </details>
