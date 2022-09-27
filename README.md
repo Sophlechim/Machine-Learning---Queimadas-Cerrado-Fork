@@ -93,6 +93,27 @@ Este modelo pode ser compreendido como uma complementaridade ao modelo de Árvor
 </p>
 </details>
 <details><summary><b>Comparando os desempenhos dos modelos de regressão</b></summary>
+</p>
+<p align="justify">
+Para comparar os cinco modelos preditivos desenvolvidos, comparamos os valores de RMSE e de precisão, a fim de determinar qual deles possuia o melhor desempenho. Para tanto, nós colocamos esses valores em uma tabela, e obtemos o seguinte resultado: 
+</p>
+<ol>
+<h5>
+<li> | Modelo | Normalizado | Não Normalizado |
+| :---         |     :---:      |          ---: |
+| Baseline   | 0,25423701     | 0,25297497    |
+| 1 K-NN     | 0,06953842     | 0,08039338    |
+| 2 K-NN     | 0,07485483     | 0,084071208   |
+| 3 K-NN     | 0,08021297     | 0,088340406   |
+| 4 K-NN     | 0,08474465     | 0,092532391   |
+| 5 K-NN     | 0,08843453     | 0,096188816   |
+| 6 K-NN     | 0,09124067     | 0,099139877   |
+| 7 K-NN     | 0,09396136     | 0,1021576465  |
+| 8 K-NN     | 0,09655897     | 0,1046688394  |
+| Regressão  | 0,23769020     | 0,2370621     |
+| Árvore     | 0,08           | 0,08          |
+| Floresta   | 0,066630042    | 0,0667153531  |
+ 
 </details>
 <details><summary><b>Classificação</b></summary>
 O metódo de classificação utilizado foi o K-NN. Em um primeiro momento, necessita-se de dados categóricos, por isso, desenvlve-se uma coluna de classificação categória sobre as chances do risco de fogo. Após esta criação, aplica-se o metódo de classificação e análisa sua accuracy.  
