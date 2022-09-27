@@ -74,10 +74,13 @@ De modo a iniciar os treinos dos modelos, inicia-se com o modelo mais básico e 
 </details>
 <details><summary><b>Treinamento de modelo de <i>k</i> vizinhos mais próximos</b></summary>
 <p align="justify">
-
+Dada a parametrização inicial com RMSE de 25%, o objetivo das discentes passou a encontrar um modelo cuja o RMSE fosse menor e se possível, mais próximo de zero. Deste modo, surge o k-nn vizinhos como um modelo cujo a hipótese consiste na ideia de que a similaridade dos dados é condizente com as regiões próximas no espaço de entrada. Os k determinam a quantidade de vizinhos que serão analisados na região, este modelo apresentou um RMSE próximo a zero e observou-se que conforme for menor o número de k menor será o RMSE.
 </p>
 </details>
 <details><summary><b>Regressão linear</b></summary>
+<p align="justify">
+O modelo de regressão linear não obteve uma boa métrica, chegando a 23%. Este modelo tem como objetivo relacionar linearmente as nossas features e o nosso target, logo, este resultado demonstra que a relação entre as features e o target não estão linearmente relacionadas o que corrabora com a proposta de features de climatologia do nosso modelo, visto que o clima não é uma concepção linear.
+</p>
 </details>
 <details><summary><b>Árvore de decisão</b></summary>
 <p align="justify">
@@ -85,6 +88,9 @@ Seguindo a série de treinamentos de modelos, introduzimos o algoritmo de árvor
 </p>
 </details>
 <details><summary><b>Floresta aleatória</b></summary>
+<p align="justify">
+Este modelo pode ser compreendido como uma complementaridade ao modelo de Árvore de Decisões. Ok! Mas em que sentido? As árvores de decisões podem apresentar modelos simples e explicativos, mas possuem a desvantagem de nem sempre apresentarem uma boa perfomance, logo, de modo a melhorar essa performance, usufrui-se da Floresta Aleatória cujo o objetivo é o de desenvolver um comitê que contenha diversas árvores de decisão onde cada uma realiza sua previsão individual, cada previsão individual pode ser considerada como um voto e ao ser relacionada com outros votos, possibilita-se a determinação de uma resposta final. O RMSE apresentou resultados próximos a zero e se mostrou eficaz.
+</p>
 </details>
 <details><summary><b>Comparando os desempenhos dos modelos de regressão</b></summary>
 </details>
