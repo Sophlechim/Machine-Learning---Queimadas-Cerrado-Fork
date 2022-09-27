@@ -97,10 +97,9 @@ Este modelo pode ser compreendido como uma complementaridade ao modelo de Árvor
 <p align="justify">
 Para comparar os cinco modelos preditivos desenvolvidos, comparamos os valores de RMSE e de precisão, a fim de determinar qual deles possuia o melhor desempenho. Para tanto, nós colocamos esses valores em uma tabela, e obtemos o seguinte resultado: 
 </p>
-<ol>
-<h5>
-<li> | Modelo | Normalizado | Não Normalizado |
-| :---         |     :---:      |          ---: |
+
+| Modelo | Normalizado | Não Normalizado |
+| :---       |     :---:      |   ---:        |
 | Baseline   | 0,25423701     | 0,25297497    |
 | 1 K-NN     | 0,06953842     | 0,08039338    |
 | 2 K-NN     | 0,07485483     | 0,084071208   |
