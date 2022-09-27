@@ -74,10 +74,13 @@ De modo a iniciar os treinos dos modelos, inicia-se com o modelo mais básico e 
 </details>
 <details><summary><b>Treinamento de modelo de <i>k</i> vizinhos mais próximos</b></summary>
 <p align="justify">
-
+Dada a parametrização inicial com RMSE de 25%, o objetivo das discentes passou a encontrar um modelo cuja o RMSE fosse menor e se possível, mais próximo de zero. Deste modo, surge o k-nn vizinhos como um modelo cujo a hipótese consiste na ideia de que a similaridade dos dados é condizente com as regiões próximas no espaço de entrada. Os k determinam a quantidade de vizinhos que serão analisados na região, este modelo apresentou um RMSE próximo a zero e observou-se que conforme for menor o número de k menor será o RMSE.
 </p>
 </details>
 <details><summary><b>Regressão linear</b></summary>
+<p align="justify">
+O modelo de regressão linear não obteve uma boa métrica, chegando a 23%. Este modelo tem como objetivo relacionar linearmente as nossas features e o nosso target, logo, este resultado demonstra que a relação entre as features e o target não estão linearmente relacionadas o que corrabora com a proposta de features de climatologia do nosso modelo, visto que o clima não é uma concepção linear.
+</p>
 </details>
 <details><summary><b>Árvore de decisão</b></summary>
 <p align="justify">
@@ -85,9 +88,27 @@ Seguindo a série de treinamentos de modelos, introduzimos o algoritmo de árvor
 </p>
 </details>
 <details><summary><b>Floresta aleatória</b></summary>
+<p align="justify">
+Este modelo pode ser compreendido como uma complementaridade ao modelo de Árvore de Decisões. Ok! Mas em que sentido? As árvores de decisões podem apresentar modelos simples e explicativos, mas possuem a desvantagem de nem sempre apresentarem uma boa perfomance, logo, de modo a melhorar essa performance, usufrui-se da Floresta Aleatória cujo o objetivo é o de desenvolver um comitê que contenha diversas árvores de decisão onde cada uma realiza sua previsão individual, cada previsão individual pode ser considerada como um voto e ao ser relacionada com outros votos, possibilita-se a determinação de uma resposta final. O RMSE apresentou resultados próximos a zero e se mostrou eficaz.
+</p>
 </details>
 <details><summary><b>Comparando os desempenhos dos modelos de regressão</b></summary>
 </details>
 <details><summary><b>Classificação</b></summary>
+</details>
+<details><summary><b>Bloco 2 - Teste.ipynb</b></summary>
+<p align="justify">
+Esse arquivo presente nosso repositório não faz parte da lista de tarefas oficial do Bloco 2, mas foi necessário para estudarmos o comportamento dos dados de maneira gráfica com a utilização de uma 'target' diferente da original, uma vez que os gráficos plotados de Modelo de Previsão X Modelo Real estavam muito estranhos e ruins. Foi escolhida, dentre as possíveis no nosso Dataframe, uma menos complexa e, supostamente, mais fácil de prever, sendo essa, então, a Precipitação.
+</p>
+<p align="justify">
+Sendo assim, separadamente, os modelos propostos no trabalho foram reproduzidos para essa nova target. Ao plotar todos os gráficos, realmente os modelos estão ruins, comom possível ver no arquivo. Surgimos assim, com algumas hipóteses sobre o que pode ter acontecido, podendo ser, inclusive, uma união de fatores:
+</p>
+<ol>
+<h5>
+<li>O primeiro ponto que pensamos, foi a pouca quantidade de features que coletamos, podendo influenciar fortemente nos resultados dos modelos, uma vez que não temos informações básicas como temperatura, umidade do ar e do solo e até o uso de solo;</li>
+<li>Em segundo, a falta de especificação e diferenciação de dados numéricos em casas decimais pode ter causado essas linhas verticais de distâncias iguais em determinados valores de <i>x</i> com diversos pontos sobrepostos, de forma que o modelo compreendou que existem muitos valores de <i>y</i> de um mesmo fator para um único <i>x</i>;</li>
+<li>Por fim, a falta de normalização de dados (que foi sugerida) em metade do código, em Bloco 2.ipynb, uma vez que os gráficos do modelo de Floresta Aleatória para dados normalizados está muito melhor que o gráfico dos dados não-normalizados.</li>
+</h5>
+</ol>
 </details>
  Status do Projeto: Em desenvolvimento :warning:
