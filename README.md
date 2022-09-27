@@ -90,4 +90,19 @@ Seguindo a série de treinamentos de modelos, introduzimos o algoritmo de árvor
 </details>
 <details><summary><b>Classificação</b></summary>
 </details>
+<details><summary><b>Bloco 2 - Teste.ipynb</b></summary>
+<p align="justify">
+Esse arquivo presente nosso repositório não faz parte da lista de tarefas oficial do Bloco 2, mas foi necessário para estudarmos o comportamento dos dados de maneira gráfica com a utilização de uma 'target' diferente da original, uma vez que os gráficos plotados de Modelo de Previsão X Modelo Real estavam muito estranhos e ruins. Foi escolhida, dentre as possíveis no nosso Dataframe, uma menos complexa e, supostamente, mais fácil de prever, sendo essa, então, a Precipitação.
+</p>
+<p align="justify">
+Sendo assim, separadamente, os modelos propostos no trabalho foram reproduzidos para essa nova target. Ao plotar todos os gráficos, realmente os modelos estão ruins, comom possível ver no arquivo. Surgimos assim, com algumas hipóteses sobre o que pode ter acontecido, podendo ser, inclusive, uma união de fatores:
+</p>
+<ol>
+<h5>
+<li>O primeiro ponto que pensamos, foi a pouca quantidade de features que coletamos, podendo influenciar fortemente nos resultados dos modelos, uma vez que não temos informações básicas como temperatura, umidade do ar e do solo e até o uso de solo;</li>
+<li>Em segundo, a falta de especificação e diferenciação de dados numéricos em casas decimais pode ter causado essas linhas verticais de distâncias iguais em determinados valores de <i>x</i> com diversos pontos sobrepostos, de forma que o modelo compreendou que existem muitos valores de <i>y</i> de um mesmo fator para um único <i>x</i>;</li>
+<li>Por fim, a falta de normalização de dados (que foi sugerida) em metade do código, em Bloco 2.ipynb, uma vez que os gráficos do modelo de Floresta Aleatória para dados normalizados está muito melhor que o gráfico dos dados não-normalizados.</li>
+</h5>
+</ol>
+</details>
  Status do Projeto: Em desenvolvimento :warning:
