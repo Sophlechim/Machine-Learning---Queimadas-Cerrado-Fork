@@ -142,4 +142,20 @@ Sendo assim, separadamente, os modelos propostos no trabalho foram reproduzidos 
 </h5>
 </ol>
 </details>
+
+## Bloco 3
+<p align="justify">
+O Bloco 3 tem como intuito demonstrar ferramentas que possamos utilizar para desenvolver uma Machine Learning não-supervisionado.
+</p>
+
+<details><summary><b> Redução de dimensionalidade </b></summary>
+</details>
+
+<details><summary><b> Agrupamento(clustering) </b></summary>
+</details>
+
+<details><summary><b> Detecção de outliers </b></summary>
+</details>
+
+<p align="justify">
  Status do Projeto: Em desenvolvimento :warning:
