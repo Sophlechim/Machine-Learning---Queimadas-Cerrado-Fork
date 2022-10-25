@@ -1,6 +1,6 @@
 <h2 align="center"> RISCO DE FOGO: </h2>
 <h3 align="center">  O USO DE MACHINE LEARNING PARA ANÁLISE DAS QUEIMADAS NO CERRADO BRASILEIRO </h3>
-<p align="center"><img src="https://user-images.githubusercontent.com/106678040/186006436-e5519ae1-bd59-4ef0-9aab-45246a657ba9.png"></p>
+<p align="center"><img src="https://www.envolverde.com.br/wp-content/uploads/2012/09/Cerrado.jpg"></p>
 
 ## Descrição do Projeto
 <p align="justify">
