@@ -145,16 +145,24 @@ Sendo assim, separadamente, os modelos propostos no trabalho foram reproduzidos 
 
 ## Bloco 3
 <p align="justify">
-O Bloco 3 tem como intuito demonstrar ferramentas que possamos utilizar para desenvolver uma Machine Learning não-supervisionado.
+Neste bloco, trabalhamos com modelos de aprendizagem não-supervisionados. A aprendizagem não supervisionada consiste em identificar padrões nos dados não tabelados e agrupá-los com base nas similaridades e diferenças de valores. As principais tarefas associadas a esse método são agrupamento, associação e redução de dimensionalidade.
 </p>
 
 <details><summary><b> Redução de dimensionalidade </b></summary>
+<p align="justify">
+Iniciamos com o algoritmo de Análise de Componentes Principais (PCA), que reduz a dimensionalidade do conjunto de dados enquanto mantém o máximo de informações possível. O cada eixo resultante dessa análise é um vetor corresponde ao grau de variância dos dados em ordem crescente. Em nosso caso, a PC1 apresentou destaque em relação às outras e observamos que podemos selecionar até três princpais componentes para explicar a variância do nosso dataset. Dessa forma, a aplicação do PCA ajuda a evitar o overfitting do modelo.
+</p>
 </details>
 
-<details><summary><b> Agrupamento(clustering) </b></summary>
+<details><summary><b> Agrupamento (clustering) </b></summary>
+<p align="justify"> O algoritmo de clustering é eficiente para exploração e análise de dados crus e não tabelados, pois agrupa os dados de acordo com suas similidades e diferenças, demonstrando assim o comportamento das diferentes atributos do dataset. Para isso, definimos os atributos e o número de clusters (avaliamos a quantidade adequada de clusters de acordo com a "curva do cotovelo") e plotamos para visualizar a relação entre os valores. 
+</p>
 </details>
 
 <details><summary><b> Detecção de outliers </b></summary>
+<p align="justify">
+ É um método de detecção de valores anômalos (outliers) com base na avaliação dos valores de cada ponto de dados em relação aos valores dos dados vizinhos mais próximos. Definimos hiperparâmetros para indicar quantos vizinhos devem ser levados em consideração e plotamos a dispersão dos mesmos.
+</p>
 </details>
 
 <p align="justify">
