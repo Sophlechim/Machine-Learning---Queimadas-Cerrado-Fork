@@ -17,7 +17,7 @@ Este projeto foi elaborado pelas estudantes durante o segundo semestre de gradua
 
 <details><summary><h3><b>Como se guiar no nosso GitHub?</h3></b></summary>
 <p align="justify">
-É bem simples! Na pasta "Dados Pré-Processados do INPE" disponível no GitHub, é realizado um tratamento inicial nos dados que resultam em nossos datasets  em .csv representados com o mes que se refere ao conjunto de dados encontrados na pasta "Dados Mensais - Dataset .csv". Além disso, de modo para acessar as tarefas realizadas na primeira etapa, deve-se acessar a pasta "Bloco 1", e para compreensão dos modelos de treino, acessem a pasta "Bloco 2", arquivo disponível que foi desenvolvido no JupyterNotebook.
+É bem simples! Na pasta "Dados Pré-Processados do INPE" disponível no GitHub, é realizado um tratamento inicial nos dados que resultam em nossos datasets  em .csv representados com o mes que se refere ao conjunto de dados encontrados na pasta "Dados Mensais - Dataset .csv". Além disso, de modo para acessar as tarefas realizadas na primeira etapa, deve-se acessar a pasta "Bloco 1", e para compreensão dos modelos de treino, acessem a pasta "Bloco 2", e para compreender os aprendizados de máquina não supervisionados, o "Bloco 3" é o arquivo que deve ser acessado. Todos os arquivosforam desenvolvido no JupyterNotebook.
 </p>
 </details>
 
