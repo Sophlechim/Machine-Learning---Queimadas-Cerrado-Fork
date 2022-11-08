@@ -21,6 +21,9 @@ Este projeto foi elaborado pelas estudantes durante o segundo semestre de gradua
 </p>
 </details>
 
+<details><summary><h3><b>Possíveis problemas e suas soluções!</h3></b></summary>
+</details>
+
 ## Processo Metodológico
 <details><summary><b>Objeto de Análise</b></summary>
 <p align="justify">
@@ -163,6 +166,11 @@ Iniciamos com o algoritmo de Análise de Componentes Principais (PCA), que reduz
 <p align="justify">
  É um método de detecção de valores anômalos (outliers) com base na avaliação dos valores de cada ponto de dados em relação aos valores dos dados vizinhos mais próximos. Definimos hiperparâmetros para indicar quantos vizinhos devem ser levados em consideração e plotamos a dispersão dos mesmos.
 </p>
+</details>
+
+## Bloco 4
+<details><summary><b> Validação Cruzada </b></summary>
+
 </details>
 
 <p align="justify">
