@@ -27,9 +27,11 @@ Ao longo do nosso projeto, nos deparamos com alguns problemas que foram complica
 </p>
 
 <details><summary><b>Debugging</b></summary>
+</details>
 
 <details><summary><b>Upgrade do threadpool</b></summary>
- 
+</details>
+
 <details><summary><b>Dataset muito grande</b></summary>
 </details>
 
