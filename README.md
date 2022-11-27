@@ -4,10 +4,10 @@
 
 ## Descrição do Projeto
 <p align="justify">
-O presente projeto buscou desenvolver um modelo preditivo de risco de incêndio no Cerrado brasileiro. O alvo do nosso modelo é o risco de fogo e os atributos são variáveis da climatologia local (precipitação, dias sem chuva e localização geográfica) e a potência radiativa do fogo (<i> fire radiative power</i>, medida de energia radiante por unidade de tempo associada à taxa de queima da vegetação, dada em MW). Os dados coletados são do banco de dados do <a href="https://queimadas.dgi.inpe.br/">Instituto Nacional de Pesquisas Espaciais</a>.
+O presente projeto buscou desenvolver um modelo preditivo de risco de incêndio no Cerrado brasileiro. O alvo do nosso modelo é o risco de fogo e os atributos são variáveis da climatologia local (precipitação, dias sem chuva e localização geográfica) e a potência radiativa do fogo (<i>fire radiative power</i>, medida de energia radiante por unidade de tempo associada à taxa de queima da vegetação, dada em MW). Os dados coletados são do banco de dados abertos do <a href="https://queimadas.dgi.inpe.br/">Instituto Nacional de Pesquisas Espaciais</a>.
 </p>
 <p align="justify">
-Este repositório tem como intuito demonstrar o processo metodológico utilizado para o desenvolvimento do projeto, que consistiu em (<b>a</b>) escolha do tema, (<b>b</b>) coleta, tratamento e análise de dados, (<b>c</b>) experimentação de modelos supervisionados e não-supervisionados e, por, fim, (<b>d</b>) avaliação e definição dos algoritmos mais representativos.</p>
+Este repositório tem como intuito demonstrar o processo metodológico utilizado para o desenvolvimento do modelo, que consistiu em (<b>a</b>) escolha do tema, (<b>b</b>) coleta, tratamento e análise de dados, (<b>c</b>) experimentação de algoritmos supervisionados e não-supervisionados e, por, fim, (<b>d</b>) avaliação e definição dos algoritmos mais representativos.</p>
 <p align="justify">
 O projeto foi elaborado pelas estudantes durante o segundo semestre de graduação da Ilum - Escola de Ciência, para a disciplina de Aprendizado de Máquina. O grupo é composto pelas estudantes: </p>
 <p>:heavy_check_mark: Isabela Bento Beneti  </p>
@@ -18,7 +18,13 @@ O projeto foi elaborado pelas estudantes durante o segundo semestre de graduaç�
  
 <details><summary><h3><b>Como se guiar no nosso GitHub?</h3></b></summary>
 <p align="justify">
- É bem simples!  O código está em dividido em cinco arquivos de formato <i>ipynb</i> (<b>Bloco 1</b>, <b>2</b>, <b>3</b> e <b>4</b>, além do <b><i>Projeto_ML_Oficial</i></b> [em construção, logo, não é recomendado começar por ele]) e pode ser aberto pelo jupyter notebook, vscode, g. colab ou no seu ambiente de escolha. Os arquivos zipados <b>Dados Mensais - 2021</b> e <b>2022</b> são os dados necessários para rodar o projeto; estão em formato <i>csv</i>, precisam ser extraídos e alocados na mesma pasta que o código. A explicação detalhada do que foi realizado em cada bloco pode ser encontrada em seu respectivo arquivo, enquanto seu papel para o desenvolvimento do modelo e procedimentos gerais estão descritos na aba <b>Bloco</b> deste documento.
+ É bem simples!  O código está em dividido em cinco arquivos de formato <i>ipynb</i> (<b>Bloco 1</b>, <b>2</b>, <b>3</b> e <b>4</b>, além do <b><i>Projeto_ML_Oficial</i></b> [em construção, logo, não é recomendado começar por ele]) e pode ser aberto pelo jupyter notebook, vscode, g. colab ou em seu ambiente de desenvolvimento preferido.
+</p>
+
+<p align="justify"> Os arquivos zipados <b>Dados Mensais - 2021</b> e <b>2022</b> são os dados necessários para rodar o projeto; estão em formato <i>csv</i>, precisam ser extraídos e alocados na mesma pasta que o código.
+</p>
+
+<p align="justify">A explicação detalhada do que foi realizado em cada bloco pode ser encontrada em seu respectivo arquivo, enquanto seu papel para o desenvolvimento do modelo e procedimentos gerais estão descritos na aba <b>Bloco</b> deste documento.
 </p>
 </details>
 
@@ -30,6 +36,11 @@ Ao longo do nosso projeto, nos deparamos com alguns problemas que foram complica
 
 <details><summary><b>Debugging</b></summary>
 </details>
+<p align="justify">
+<h3>Arquivos:</h3> Para rodar o código em algum ambiente de desenvolvimento, cheque os procedimentos necessário para o uso de arquivos adicionais! Isso será necessário logo no início do código deste projeto, que é quando é carregado os dados usados pelo modelo.
+<p align="justify"> Por exemplo: para o caso do <b>Jupyter Notebook</b> e do <b>VSCode</b>, é necessário salvar o arquivo do código (<i>ipynb</i>) na mesma pasta dos dados (<i>csv</i>). Para o caso do <b>Google Colab</b>, é necessário realizar o upload dos dados na aba de arquivos. Logo, esse procedimento pode variar, então é bom dar uma olhada na documentação do IDE escolhido!
+</p>
+</p>
 
 <details><summary><b>Upgrade do threadpool</b></summary>
 </details>
@@ -40,52 +51,52 @@ Ao longo do nosso projeto, nos deparamos com alguns problemas que foram complica
 ## Processo Metodológico
 <details><summary><b>Objeto de Análise</b></summary>
 <p align="justify">
-Durante a primeira aula, discutimos a respeito das áreas em comum que nos interessavam, e percebemos que nossos interesses convergiam para as áreas ecológicas e sociais. Por isso, decidimos explorar um tema relacionado à área socioambiental.
+Durante a primeira aula, discutimos a respeito das áreas em comum que nos interessavam e percebemos que nossos interesses convergiam para as áreas ecológicas e sociais. Por isso, decidimos explorar um tema relacionado à área socioambiental.
 </p>
 <p align="justify">
-Tendo isso em mente, analisamos algumas das bases disponibilizadas no arquivo "Material de Estudo" e nos interessamos pelas APIs e pelas Databases do INPE. A partir disso, passamos a desenvolver a ideia de um projeto que relacionava as queimadas na vegetação brasileira com outros fatores, tais como precipitação e quantidades de dias sem chuva.
+A partir disso, procuramos quais temas socioambientais possuem dados o suficiente coletados, acessíveis e bem documentados. Analisamos algumas das fontes recomendadas pelos professores no guia do início da disciplina e nos interessamos pelo banco de dados do INPE. A partir disso, passamos a desenvolver a ideia de um projeto que relacionava as queimadas na vegetação brasileira com outros fatores, tais como precipitação e quantidades de dias sem chuva.
 </p>
 <p align="justify">
-Por fim, decidimos que, a partir desses dados e fatores analisados, tentaríamos fazer uma previsão de focos de incêndio pelo método de regressão linear, utilizando Machine Learning.
+Por fim, decidimos que, a partir desse banco de dados e fatores analisados, desenvolveríamos um modelo preditivo de focos de incêndio.
 </p>
 </details>
 <details><summary><b>Recortes</b></summary>
 <p align="justify">
-Uma das grandes discussões realisadas pelo nosso grupo foi sobre quais recortes utilizaríamos para elaborar o projeto. Acabamos por decidir o bioma Cerrado, que é o segundo bioma mais afetado por queimadas em todo o Brasil, e sobre o qual há muitos dados disponíveis para estudo. A escolha do bioma se deu fortemente por pelo aumento de focos de incêndio na região e pela proximidade de uma das desonvolvedoras com o local. Além disso, não optamos pelo bioma da Amazônia devido o grande número de pesquisas quanto a este e a vontade de ressaltar outros biomas negligenciados pela mídia. 
+Uma das grandes discussões realisadas pelo nosso grupo foi sobre quais recortes utilizaríamos para elaborar o projeto. Acabamos por decidir o bioma Cerrado, que é o segundo bioma mais afetado por queimadas em todo o Brasil e sobre o qual há muitos dados disponíveis para estudo. A escolha do bioma se deu fortemente por pelo aumento de focos de incêndio na região. Além disso, não optamos pelo bioma da Amazônia devido o grande número de pesquisas dedicadas à região e a vontade de ressaltar outros biomas negligenciados pela mídia. 
 </p>
 </details>
 <details><summary><b>Divisão de trabalho</b></summary>
 <p align="justify">
-O projeto tem o intuito de ser dividido em 4 blocos, cada um separado especificamente para as etapas do trabalho, que devem ser concluídas até o final do semestre. Ao analisar a lista de tarefas para o Bloco 1 de Aprendizado de Máquina, decidimos que seria válido que cada uma das integrantes ficasse responsável por um dos tópicos da lista. Ao final, o trabalho foi realizado de maneira bem mais conjunta do que o previsto, já que nós ajudamos umas as outras durante o processo!
+A disciplina está organizada em 4 blocos progressivos para a construção de um modelo de aprendizado de máquina. Ao longo do primeiro bloco, decidimos que seria mais produtivo que cada uma das integrantes ficasse responsável por um dos tópicos da lista. Ao final, o trabalho foi realizado de maneira bem mais conjunta do que o previsto, já que nós ajudamos umas as outras durante o processo!
 </p>
 </details>
 
 ## Bloco 1
 <details><summary><b>Coleta de Dados</b></summary>
 <p align="justify">
-Durante, principalmente, as primeiras duas semanas desde a definição do nosso tema, pesquisamos intensamente por bancos de dados e APIs que nos auxiliassem no desenvolvimento do nosso sistema de aprendizado de máquina. Priorizamos dados confiáveis e em formatos que facilitassem a manipulação pelo Jupyter na linguagem Python. Concluímos, por fim, após discussões com nossos professores, que os dados do INPE eram de fato os mais seguros e também os mais completos para se trabalhar, contendo neles não apenas a localização exata das queimadas, como também o risco de fogo, o bioma ao qual aquela região pertence, a precipitação, o número de dias sem chuva, entre outros.
+Durante, principalmente, as primeiras duas semanas desde a definição do nosso tema, pesquisamos intensamente por bancos de dados e APIs que nos auxiliassem no desenvolvimento do nosso sistema de aprendizado de máquina. Priorizamos dados confiáveis, organizados e bem documentados, além de facilmente manipuláveis em python. Concluímos, por fim, após discussões com nossos professores, que os dados do INPE eram de fato os mais coerentes e também os mais completos para se trabalhar, contendo neles não apenas as coordenadas das queimadas, como também o risco de fogo e sua potência radiativa associada, o bioma ao qual aquela região pertence, a precipitação, o número de dias sem chuva, entre outros.
  <br>
-Coletamos, pois, todos os dados de queimadas do INPE desde o começo de 2022 até julho de 2022. Esse conjunto de dados, para nossa surpresa, não incluía somente informações sobre o Brasil, mas sobre o mundo inteiro. Por isso, na tarefa seguinte (de preparação), foi essencial que filtrássemos os dados.
+Coletamos, então, todos os dados de queimadas do INPE desde janeiro de 2022 até julho de 2022. Esse conjunto de dados, para nossa surpresa, não incluía somente informações sobre o Brasil, mas sobre o mundo inteiro. Por isso, na tarefa seguinte (de preparação), foi essencial que filtrássemos os dados.
 </p>
 </details>
 <details><summary><b>Preparação dos Dados</b></summary>
 <p align="justify">
-Em um primeiro momento, identifica-se os tipos de dados, em nosso caso, são todos do tipo float. Os dados foram normalizados, como o caso do número de dias sem chuva e a precipitação, utilizando o máximo e o mínimo dos valores para que todos os dados fiquem na mesma escala. Posteriormente, os dados começaram a ser analisados.  
+Identificamos que os dados do nosso conjunto eram todos do tipo float. Os dados foram normalizados para que ficassem na mesma escala. Em seguida, realizamos uma análise exploratória dos dados.
 </p>
 </details>
 <details><summary><b>Análise Exploratória dos Dados</b></summary>
 <p align="justify">
-Após todo o processo de coleta, filtragem e preparação dos dados, pudemos finalmente analisar tudo o que conseguimos obter através do nosso DataFrame. Os resultados que esperamos ter, devem demonstrar que meses em que existe uma baixa taxa de precipitação tendem a ter probabilidades mais altas de queimas em pontos da região, além de também procurarmos ter uma correlação entre os fatores de precipitação e os níveis de risco de fogo, que poderão ser previstos. Assim, a utilização de comandos de matrizes de covariância e correlação é imprescíndível para explorar e computar essas probabilidades, podendo, ao final, gerar gráficos que apresentam tais taxas e variações.
+Após todo o processo de coleta, filtragem e tratamento dos dados, pudemos finalmente analisar tudo o que conseguimos obter através do nosso conjunto. Nossa hipótese era de que meses em que existe uma baixa taxa de precipitação e mais dias sem chuva apresentam maior probabilidade de focos de fogo na região. Assim, geramos matrizes de covariância e correlação para explorar e computar essa relação a partir de gráficos.
 </p>
 </details>
 
 ## Bloco 2
 <p align="justify">
-O Bloco 2 tem como intuito, realizar a aplicação de técnicas de modelo de Machine Learning, de modo a identificar qual modelo combina melhor com o código e dataset usufruido. De modo a analisar as divergências de cada técnica e a interferência dos dados normalizados e não-normalizados, desenvolve-se um Jupyter Notebook dividido em duas grandes seções: Treino com dados normalizados e Treino com dados não-normalizados. 
+Neste bloco, aplicamos algoritmos de aprendizado supervisionado aos nossos dados com o objetivo de identificar qual poderia ser o mais adequado. Para analisar as divergências de cada técnica e o papel da normalização dos dados, desenvolvemos um notebook dividido em duas seções: uma para os dados normalizados e outra para os não-normalizados.
 </p>
 <details><summary><b>Treino, teste e baseline</b></summary>
 <p align="justify">
-De modo a iniciar os treinos dos modelos, inicia-se com o modelo mais básico e que será um valor de referência aos demais: o modelo Baseline! Este modelo realiza uma média dos valores da target e geralmente, não apresenta bom resultado preventivo. Utilizamos o RMSE como métrica, obtendo um valor de 25% de erro de predição.
+No treinamento dos modelos, iniciamos com o modelo mais genérico e que servirá de referência de desempenho aos demais: o modelo <i>baseline</i>! Esse modelo realiza uma média dos valores da target e, geralmente, não apresenta uma boa taxa de acerto. Utilizamos o RMSE como métrica e obtivemos um valor de 25% de erro de predição.
 </p>
 </details>
 <details><summary><b>Treinamento de modelo de <i>k</i> vizinhos mais próximos</b></summary>
@@ -183,7 +194,7 @@ Iniciamos com o algoritmo de Análise de Componentes Principais (PCA), que reduz
 
 ## Bloco 4
 <p align="justify">
-Nesse último Bloco do projeto, tivemos como último aprendizado a utilização de estratégias para encontrar os melhores hiperparâmetros pra o nosso modelo de Machine Learning. Sendo essa a reta final do projeto, o nosso maior foco foi preparar o código final e oficial, que ficará disponível para acesso neste repositório, além da realização de discussões importantíssimas para o planejamento da apresentação final do projeto de conclusão do segundo semestre. 
+Nesse último Bloco do projeto, tivemos como último aprendizado a utilização de estratégias para encontrar os melhores hiperparâmetros pra o nosso modelo de aprendizado de máquina. Sendo essa a reta final do projeto, o nosso maior foco foi preparar o código final e oficial, que ficará disponível para acesso neste repositório, além da realização de discussões importantíssimas para o planejamento da apresentação do projeto de conclusão do segundo semestre. 
 </p>
 <details><summary><b> Validação Cruzada </b></summary>
 
