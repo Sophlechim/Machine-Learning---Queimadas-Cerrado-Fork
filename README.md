@@ -21,7 +21,16 @@ Este projeto foi elaborado pelas estudantes durante o segundo semestre de gradua
 </p>
 </details>
 
-<details><summary><h3><b>Possíveis problemas e suas soluções!</h3></b></summary>
+## Possíveis problemas e suas soluções!
+<p align="justify">
+Ao longo do nosso projeto, nos deparamos com alguns problemas que foram complicados de resolver por motivos muito específicos e que causaram certa dor de cabeça. Por isso, para que você não passe pelos mesmos estresses, aqui estão algumas dicas de soluções para prováveis problemas que possam surgir.
+</p>
+
+<details><summary><b>Debugging</b></summary>
+
+<details><summary><b>Upgrade do threadpool</b></summary>
+ 
+<details><summary><b>Dataset muito grande</b></summary>
 </details>
 
 ## Processo Metodológico
