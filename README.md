@@ -4,22 +4,24 @@
 
 ## Descrição do Projeto
 <p align="justify">
-O presente projeto busca desenvolver por meio de Machine Learning, um sistema de previsões de focos de incêndio no Cerrado brasileiro. Em um primeiro momento, a target analisada foi o Risco de Fogo sendo atribuídas variáveis da climatologia local, com informações a respeito da precipitação, dias sem chuva e localização geográfica, todos os dados obtidos foram por meio das APIs e Databases do INPE - Instituto Nacional de Pesquisas Espacias. 
+O presente projeto buscou desenvolver um modelo preditivo de risco de incêndio no Cerrado brasileiro. O alvo do nosso modelo é o risco de fogo e os atributos são variáveis da climatologia local (precipitação, dias sem chuva e localização geográfica) e a potência radiativa do fogo (<i> fire radiative power</i>, medida de energia radiante por unidade de tempo associada à taxa de queima da vegetação, dada em MW). Os dados coletados são do banco de dados do <a href="https://queimadas.dgi.inpe.br/">Instituto Nacional de Pesquisas Espaciais</a>.
 </p>
 <p align="justify">
-Esse repositório tem como intuito demonstrar o processo metodológico utilizado para o desenvolvimento da pesquisa. Inicialmente, as desenvolvedoras definiram um objeto de estudo de interesse coletivo e posteriormente, realizaram a coleta dos dados e a sua análise para a obtenção de uma representação gráfica acerca das informações adquiridas. Como citado, o objeto de estudo é referente aos focos de incêndio que tem se expandido, em especial, no território do Cerrado, em que, normalmente, a responsável por tal é a atividade agrícola. Entretanto, nos últimos anos, efeitos de mundanças climáticas tem aumento as probabilidades dos focos.</p>
+Este repositório tem como intuito demonstrar o processo metodológico utilizado para o desenvolvimento do projeto, que consistiu em (<b>a</b>) escolha do tema, (<b>b</b>) coleta, tratamento e análise de dados, (<b>c</b>) experimentação de modelos supervisionados e não-supervisionados e, por, fim, (<b>d</b>) avaliação e definição dos algoritmos mais representativos.</p>
 <p align="justify">
-Este projeto foi elaborado pelas estudantes durante o segundo semestre de graduação da Ilum - Escola de Ciência, para a disciplina de Aprendizado de Máquina. O grupo desenvolvedor é composto pelas estudantes: </p>
+O projeto foi elaborado pelas estudantes durante o segundo semestre de graduação da Ilum - Escola de Ciência, para a disciplina de Aprendizado de Máquina. O grupo é composto pelas estudantes: </p>
 <p>:heavy_check_mark: Isabela Bento Beneti  </p>
 <p> :heavy_check_mark: Monyque Karoline de Paula Silva </p>
 <p> :heavy_check_mark: Sofia Baccega C.C. de Oliveira </p>
 <p> :heavy_check_mark: Sophia Figueiredo Michel </p>
-
+<p align="justify">
+ 
 <details><summary><h3><b>Como se guiar no nosso GitHub?</h3></b></summary>
 <p align="justify">
-É bem simples! Nas pastas zipadas "Dados Mensais - 2021.zip" e "Dados Mensais - 2022.zip" disponível no GitHub é realizado um tratamento inicial nos dados que resultam em nossos datasets em .csv representados com por mês que se refere ao conjunto de dados encontrados. Além disso, de modo para acessar as tarefas realizadas na primeira etapa, deve-se acessar a pasta "Bloco_1"; para compreensão dos modelos de treino, temos disponível a pasta "Bloco_2"/"Bloco2 - Novo"; para compreender os aprendizados de máquina não supervisionados, o "Bloco_3" é o arquivo que deve ser acessado; por fim, para a tarefa quanto a validação cruzada do modelo, acessa-se o código em "Bloco_4". Todos os arquivos foram desenvolvido no JupyterNotebook.
+ É bem simples!  O código está em dividido em cinco arquivos de formato <i>ipynb</i> (<b>Bloco 1</b>, <b>2</b>, <b>3</b> e <b>4</b>, além do <b><i>Projeto_ML_Oficial</i></b> [em construção, logo, não é recomendado começar por ele]) e pode ser aberto pelo jupyter notebook, vscode, g. colab ou no seu ambiente de escolha. Os arquivos zipados <b>Dados Mensais - 2021</b> e <b>2022</b> são os dados necessários para rodar o projeto; estão em formato <i>csv</i>, precisam ser extraídos e alocados na mesma pasta que o código. A explicação detalhada do que foi realizado em cada bloco pode ser encontrada em seu respectivo arquivo, enquanto seu papel para o desenvolvimento do modelo e procedimentos gerais estão descritos na aba <b>Bloco</b> deste documento.
 </p>
 </details>
+
 
 ## Possíveis problemas e suas soluções!
 <p align="justify">
