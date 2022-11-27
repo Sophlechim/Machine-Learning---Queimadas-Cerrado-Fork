@@ -17,7 +17,7 @@ Este projeto foi elaborado pelas estudantes durante o segundo semestre de gradua
 
 <details><summary><h3><b>Como se guiar no nosso GitHub?</h3></b></summary>
 <p align="justify">
-É bem simples! Na pasta "Dados Pré-Processados do INPE" disponível no GitHub, é realizado um tratamento inicial nos dados que resultam em nossos datasets  em .csv representados com o mes que se refere ao conjunto de dados encontrados na pasta "Dados Mensais - Dataset .csv". Além disso, de modo para acessar as tarefas realizadas na primeira etapa, deve-se acessar a pasta "Bloco 1", e para compreensão dos modelos de treino, acessem a pasta "Bloco 2", e para compreender os aprendizados de máquina não supervisionados, o "Bloco 3" é o arquivo que deve ser acessado. Todos os arquivosforam desenvolvido no JupyterNotebook.
+É bem simples! Nas pastas zipadas "Dados Mensais - 2021.zip" e "Dados Mensais - 2022.zip" disponível no GitHub é realizado um tratamento inicial nos dados que resultam em nossos datasets em .csv representados com por mês que se refere ao conjunto de dados encontrados. Além disso, de modo para acessar as tarefas realizadas na primeira etapa, deve-se acessar a pasta "Bloco_1"; para compreensão dos modelos de treino, temos disponível a pasta "Bloco_2"/"Bloco2 - Novo"; para compreender os aprendizados de máquina não supervisionados, o "Bloco_3" é o arquivo que deve ser acessado; por fim, para a tarefa quanto a validação cruzada do modelo, acessa-se o código em "Bloco_4". Todos os arquivos foram desenvolvido no JupyterNotebook.
 </p>
 </details>
 
@@ -164,11 +164,14 @@ Iniciamos com o algoritmo de Análise de Componentes Principais (PCA), que reduz
 
 <details><summary><b> Detecção de outliers </b></summary>
 <p align="justify">
- É um método de detecção de valores anômalos (outliers) com base na avaliação dos valores de cada ponto de dados em relação aos valores dos dados vizinhos mais próximos. Definimos hiperparâmetros para indicar quantos vizinhos devem ser levados em consideração e plotamos a dispersão dos mesmos.
+É um método de detecção de valores anômalos (outliers) com base na avaliação dos valores de cada ponto de dados em relação aos valores dos dados vizinhos mais próximos. Definimos hiperparâmetros para indicar quantos vizinhos devem ser levados em consideração e plotamos a dispersão dos mesmos.
 </p>
 </details>
 
 ## Bloco 4
+<p align="justify">
+Nesse último Bloco do projeto, tivemos como último aprendizado a utilização de estratégias para encontrar os melhores hiperparâmetros pra o nosso modelo de Machine Learning. Sendo essa a reta final do projeto, o nosso maior foco foi preparar o código final e oficial, que ficará disponível para acesso neste repositório, além da realização de discussões importantíssimas para o planejamento da apresentação final do projeto de conclusão do segundo semestre. 
+</p>
 <details><summary><b> Validação Cruzada </b></summary>
 
 </details>
