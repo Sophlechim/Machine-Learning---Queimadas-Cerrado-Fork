@@ -18,7 +18,7 @@ O projeto foi elaborado pelas estudantes durante o segundo semestre de graduaç�
  
 <details><summary><h3><b>Como se guiar no nosso GitHub?</h3></b></summary>
 <p align="justify">
- É bem simples!  O código está em dividido em cinco arquivos de formato <i>ipynb</i> (<b>Bloco 1</b>, <b>2</b>, <b>3</b> e <b>4</b>, além do <b><i>Projeto_ML_Oficial</i></b> [em construção, logo, não é recomendado começar por ele]) e pode ser aberto pelo jupyter notebook, vscode, g. colab ou em seu ambiente de desenvolvimento preferido.
+ É bem simples!  O código está em dividido em quatro arquivos de formato <i>ipynb</i> (<b>Bloco 1</b>, <b>2</b>, <b>3</b> e <b>4</b>, podendo ser aberto pelo jupyter notebook, vscode, g. colab ou em seu ambiente de desenvolvimento preferido.
 </p>
 
 <p align="justify"> Os arquivos zipados <b>Dados Mensais - 2021</b> e <b>2022</b> são os dados necessários para rodar o projeto; estão em formato <i>csv</i>, precisam ser extraídos e alocados na mesma pasta que o código.
@@ -37,10 +37,24 @@ Ao longo do nosso projeto, nos deparamos com alguns problemas que foram complica
 <details><summary><b>Debugging</b></summary>
 <p align="justify">
 <h4>Arquivos:</h4> Para rodar o código em algum ambiente de desenvolvimento, cheque os procedimentos necessário para o uso de arquivos adicionais! Isso será necessário logo no início do código deste projeto, que é quando é carregado os dados usados pelo modelo.
+</p>
 <p align="justify"> Por exemplo: para o caso do <b>Jupyter Notebook</b> e do <b>VSCode</b>, é necessário salvar o arquivo do código (<i>ipynb</i>) na mesma pasta dos dados (<i>csv</i>). Para o caso do <b>Google Colab</b>, é necessário realizar o upload dos dados na aba de arquivos. Logo, esse procedimento pode variar, então é bom dar uma olhada na documentação do IDE escolhido!
+</p>
 </details>
 
 <details><summary><b>Upgrade do threadpool</b></summary>
+<p align="justify"> 
+Se você está no Bloco 3 de dados não-supervisionado e ao  realizar o plot do cotovelo de qual cluster é o mais adequado para o agrupamento e por algum acaso, receber o seguinte erro:
+</p>
+
+<img src="https://user-images.githubusercontent.com/106678040/204189749-89f5a20d-cdc7-4341-85d3-a7860d043627.jpeg" width="600" height="50"/>
+
+<p align="justify"> 
+Não se preocupe! Este é um erro muito comum, se você está usando o KMeans no Sklearn! Isso pode ocorrer, pois o seu threadpoolctlde pode estar desatualizado, em muitos casos, eles se encontra na versão 2.2.0. Vamos ver como atualiza-lo? É só seguir o comando abaixo!
+<img src="https://user-images.githubusercontent.com/106678040/204190495-5c518c37-5aa7-438d-bedd-15be85bc9d1f.jpeg" width="1200" height="150"/>
+</p>
+<p align="justify"> 
+
 </details>
 
 <details><summary><b>Dataset muito grande</b></summary>
