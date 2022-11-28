@@ -44,6 +44,18 @@ Ao longo do nosso projeto, nos deparamos com alguns problemas que foram complica
 </details>
 
 <details><summary><b>Dataset muito grande</b></summary>
+<p align="justify">
+É possível reparar que o dataset do projeto é realmente muito grande, ou seja, tem uma enorme quantidade de dados, o que pode causar problemas com o tempo de demora para certos códigos rodarem, como por exemplo: os modelos de "K-vizinhos mais próximos" e "Floresta Aleatória" e o código de "Validação Cruzada". Quando ainda estávamos com o dataset antigo, haviamos percebido como essas partes específicas demoravam tanto pra rodar e ao resolver trocar nossos dados e usar ainda mais do que antes, sabiamos que ia levar mais tempo ainda.
+</p>
+<p align="justify">
+Para contornar esse problema e não gerar problemas de sobrecarga dos computadores, lembramos da possibilidade de utilizar o High- Performance Computing (HPC) da faculdade, o nosso Supercomputador, para reduzir o tempo que precisaríamos esperar com o computador ligado por várias horas até concluir todas as células de código. Portanto, recomendamos que conecte-se a uma rede de processamento de alto desempenho, a não ser que você queria ficar 11 horas com o computador ligado e rodando um código de validação cruzada :)
+</p>
+<p align="justify">
+<b>No caso de alunos e professores da llum - Escola de Ciência</b> que estejam interessados em acessar e analisar nosso projeto, por favor acessem o nosso HPC Heisenberg. Para relembrar como entrar no Heisenberg, acessem o Guia da Apostila de Prática em Ciência de Dados na seção 9, que discorre sobre o processo de entrada no HPC. Não se esqueça que é necessário estar conectado a rede onde o Supercomputador se encontra e atua, não basta apenas se conectar ao VPN.
+</p>
+<p align="justify">
+Outro ponto válido de ser ressaltado é que, quando você já estiver no link do Jupyter puro e com o arquivo do código aberto, lembre de instalar todas as bibliotecas necessárias que foram utilizadas no projeto.
+</p>
 </details>
 
 ## Processo Metodológico
@@ -204,3 +216,5 @@ O método de validação cruzada é uma ferramenta que nos ajuda a encontrar hip
 No total, utilizando apenas esses dois tipos de validação, realizamos 10 validações cruzadas, alternando o número de hiperparâmetros. Consideramos que melhor resultado obtido entre as validações da floresta aleatória foi o com 100 árvores e 4 CPU cores. Como visto nos blocos anteriores, nosso melhor resultado do modelo k-NN foi com o menor número possível de vizinhos, ou seja, apenas 1 vizinho. Isso se deve ao modo como nossos dados se comportam: é melhor relacionar os dados mais próximos para tentar predizer qual o risco de fogo de determinado locas. Esse fato explica o por quê do melhor pipeline ter sido o com NUM_VIZINHOS= 1
 </p>
 </details>
+
+
