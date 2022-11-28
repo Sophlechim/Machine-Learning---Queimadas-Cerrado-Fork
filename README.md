@@ -18,7 +18,7 @@ O projeto foi elaborado pelas estudantes durante o segundo semestre de graduaç�
  
 <details><summary><h3><b>Como se guiar no nosso GitHub?</h3></b></summary>
 <p align="justify">
- É bem simples!  O código está em dividido em quatro arquivos de formato <i>ipynb</i> (<b>Bloco 1</b>, <b>2</b>, <b>3</b> e <b>4</b>), podendo ser aberto pelo jupyter notebook, vscode, g. colab ou em seu ambiente de desenvolvimento preferido.
+ É bem simples!  O código está em dividido em quatro arquivos de formato <i>ipynb</i> (<b>Bloco 1</b>, <b>2</b>, <b>3</b> e <b>4</b>) e pode ser aberto pelo jupyter notebook, vscode, g. colab ou em seu ambiente de desenvolvimento preferido.
 </p>
 
 <p align="justify"> Os arquivos zipados <b>Dados Mensais - 2021</b> e <b>2022</b> são os dados necessários para rodar o projeto; estão em formato <i>csv</i>, precisam ser extraídos e alocados na mesma pasta que o código.
@@ -36,7 +36,7 @@ Ao longo do nosso projeto, nos deparamos com alguns problemas que foram complica
 
 <details><summary><b>Debugging</b></summary>
 <p align="justify">
-<h4>Arquivos:</h4> Para rodar o código em algum ambiente de desenvolvimento, cheque os procedimentos necessário para o uso de arquivos adicionais! Isso será necessário logo no início do código deste projeto, que é quando é carregado os dados usados pelo modelo.
+<h4>Arquivos:</h4> Para rodar o código em algum ambiente de desenvolvimento, cheque os procedimentos necessário para o uso de arquivos adicionais. O upload de arquivos será necessário logo no início do código deste projeto, para carregar os dados utilizados pelo modelo.
 </p>
 <p align="justify"> Por exemplo: para o caso do <b>Jupyter Notebook</b> e do <b>VSCode</b>, é necessário salvar o arquivo do código (<i>ipynb</i>) na mesma pasta dos dados (<i>csv</i>). Para o caso do <b>Google Colab</b>, é necessário realizar o upload dos dados na aba de arquivos. Logo, esse procedimento pode variar, então é bom dar uma olhada na documentação do IDE escolhido!
 </p>
