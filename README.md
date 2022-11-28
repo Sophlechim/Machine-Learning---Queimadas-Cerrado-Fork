@@ -199,10 +199,8 @@ Nesse último Bloco do projeto, tivemos como último aprendizado a utilização 
 </p>
 <details><summary><b> Validação Cruzada </b></summary>
 <p align="justify">
-Validação cruzada, ou cross-validation, é um método para encontrar o melhor (ou algo próximo do melhor) conjunto de hiperparâmetros para treinar um modelo. Em nosso notebook, realizamos validação k-fold e a de floresta aleatória. 
-No total, utilizando apenas esses 2 tipos de validação, realizamos 10 validações cruzadas, alternando o número de hiperparâmetros. Consideramos que melhor resultado obtido entre as validações da floresta aleatória foi o com 100 árvores e 4 CPU cores. Como visto nos blocos anteriores, nosso melhor resultado do modelo k-NN foi com o menor número possível de vizinhos, ou seja, apenas 1 vizinho. Isso se deve ao modo como nossos dados se comportam: é melhor relacionar os dados mais próximos para tentar predizer qual o risco de fogo de determinado locas. Esse fato explica o por quê do melhor pipeline ter sido o com NUM_VIZINHOS= 1
+O método de validação cruzada é uma ferramenta que nos ajuda a encontrar hiperparâmetros razoáveis para o modelo. Com ela, é possível avaliar o ajuste do algoritmo ao modelo e previnir o sobreajuste (<i>overfitting</i>) - que hipergeneraliza os pontos conhecidos a ponto de comprometer a validade do acerto dos pontos de teste - e o subajuste (<i>underfitting</i>) - que pode não ser capaz de identificar sequer a relação entre os valores de entrada e de saída dos pontos de treinamento -. Dentre os tipos de validação cruzada, o mecanismo geral é basicamente o mesmo: o conjunto é dividido em <i>k</i> partes rotuladas, aleatórias e mutuamente exclusivas e essas partes são, então, utilizadas alternadamente entre treino, teste e validação. Em nosso notebook, realizamos validação k-fold e a de floresta aleatória. </p>
+<p align="justify">
+No total, utilizando apenas esses dois tipos de validação, realizamos 10 validações cruzadas, alternando o número de hiperparâmetros. Consideramos que melhor resultado obtido entre as validações da floresta aleatória foi o com 100 árvores e 4 CPU cores. Como visto nos blocos anteriores, nosso melhor resultado do modelo k-NN foi com o menor número possível de vizinhos, ou seja, apenas 1 vizinho. Isso se deve ao modo como nossos dados se comportam: é melhor relacionar os dados mais próximos para tentar predizer qual o risco de fogo de determinado locas. Esse fato explica o por quê do melhor pipeline ter sido o com NUM_VIZINHOS= 1
 </p>
 </details>
-
-<p align="justify">
- Status do Projeto: Em desenvolvimento :warning:
