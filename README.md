@@ -18,7 +18,7 @@ O projeto foi elaborado pelas estudantes durante o segundo semestre de graduaç�
  
 <details><summary><h3><b>Como se guiar no nosso GitHub?</h3></b></summary>
 <p align="justify">
- É bem simples!  O código está em dividido em quatro arquivos de formato <i>ipynb</i> (<b>Bloco 1</b>, <b>2</b>, <b>3</b> e <b>4</b>, podendo ser aberto pelo jupyter notebook, vscode, g. colab ou em seu ambiente de desenvolvimento preferido.
+ É bem simples!  O código está em dividido em quatro arquivos de formato <i>ipynb</i> (<b>Bloco 1</b>, <b>2</b>, <b>3</b> e <b>4</b>), podendo ser aberto pelo jupyter notebook, vscode, g. colab ou em seu ambiente de desenvolvimento preferido.
 </p>
 
 <p align="justify"> Os arquivos zipados <b>Dados Mensais - 2021</b> e <b>2022</b> são os dados necessários para rodar o projeto; estão em formato <i>csv</i>, precisam ser extraídos e alocados na mesma pasta que o código.
