@@ -123,17 +123,17 @@ Neste bloco, aplicamos algoritmos de aprendizado supervisionado aos nossos dados
 </p>
 <details><summary><b>Treino, teste e baseline</b></summary>
 <p align="justify">
-No treinamento dos modelos, iniciamos com o modelo mais genérico e que servirá de referência de desempenho aos demais: o modelo <i>baseline</i>! Esse modelo realiza uma média dos valores da target e, geralmente, não apresenta uma boa taxa de acerto. Utilizamos o RMSE como métrica e obtivemos um valor de 25% de erro de predição.
+No treinamento dos modelos, iniciamos com o modelo mais genérico e que servirá de referência de desempenho aos demais: o modelo <i>baseline</i>! Esse modelo realiza uma média dos valores da target e, geralmente, não apresenta uma boa taxa de acerto. Utilizamos o RMSE como métrica e obtivemos um valor aproximado de 0.22 de erro de predição.
 </p>
 </details>
 <details><summary><b>Treinamento de modelo de <i>k</i> vizinhos mais próximos</b></summary>
 <p align="justify">
-Dada a parametrização inicial com RMSE de 25%, o objetivo das discentes passou a encontrar um modelo cuja o RMSE fosse menor e se possível, mais próximo de zero. Deste modo, surge o k-nn vizinhos como um modelo cujo a hipótese consiste na ideia de que a similaridade dos dados é condizente com as regiões próximas no espaço de entrada. Os k determinam a quantidade de vizinhos que serão analisados na região, este modelo apresentou um RMSE próximo a zero e observou-se que conforme for menor o número de k menor será o RMSE.
+Dada a parametrização inicial com RMSE de 0.22, o objetivo das discentes passou a encontrar um modelo cuja o RMSE fosse menor e se possível, mais próximo de zero. Deste modo, surge o k-nn vizinhos como um modelo cujo a hipótese consiste na ideia de que a similaridade dos dados é condizente com as regiões próximas no espaço de entrada. Os k determinam a quantidade de vizinhos que serão analisados na região, este modelo apresentou um RMSE próximo a zero e observou-se que conforme for menor o número de k menor será o RMSE.
 </p>
 </details>
 <details><summary><b>Regressão linear</b></summary>
 <p align="justify">
-O modelo de regressão linear não obteve uma boa métrica, chegando a 23%. Este modelo tem como objetivo relacionar linearmente as nossas features e o nosso target, logo, este resultado demonstra que a relação entre as features e o target não estão linearmente relacionadas o que corrabora com a proposta de features de climatologia do nosso modelo, visto que o clima não é uma concepção linear.
+O modelo de regressão linear não obteve uma boa métrica, chegando a 0.20. Este modelo tem como objetivo relacionar linearmente as nossas features e o nosso target, logo, este resultado demonstra que a relação entre as features e o target não estão linearmente relacionadas o que corrabora com a proposta de features de climatologia do nosso modelo, visto que o clima não é uma concepção linear.
 </p>
 </details>
 <details><summary><b>Árvore de decisão</b></summary>
@@ -154,18 +154,18 @@ Para comparar os cinco modelos preditivos desenvolvidos, comparamos os valores d
 
 | Modelo | Normalizado | Não Normalizado |
 | :---       |     :---:      |   ---:        |
-| Baseline   | 0,25423701     | 0,25297497    |
-| 1 K-NN     | 0,06953842     | 0,08039338    |
-| 2 K-NN     | 0,07485483     | 0,084071208   |
-| 3 K-NN     | 0,08021297     | 0,088340406   |
-| 4 K-NN     | 0,08474465     | 0,092532391   |
-| 5 K-NN     | 0,08843453     | 0,096188816   |
-| 6 K-NN     | 0,09124067     | 0,099139877   |
-| 7 K-NN     | 0,09396136     | 0,1021576465  |
-| 8 K-NN     | 0,09655897     | 0,1046688394  |
-| Regressão  | 0,23769020     | 0,2370621     |
-| Árvore     | 0,08           | 0,08          |
-| Floresta   | 0,066630042    | 0,0667153531  |
+| Baseline   | 0.22437296     | 0.22436829    |
+| 1 K-NN     | 0.08327995     | 0.08534422    |
+| 2 K-NN     | 0.08421390     | 0.08509752    |
+| 3 K-NN     | 0.08740112     | 0.08732847    |
+| 4 K-NN     | 0.09072226     | 0.08951491    |
+| 5 K-NN     | 0.09320795     | 0.09162095    |
+| 6 K-NN     | 0.09536342     | 0.09331903    |
+| 7 K-NN     | 0.09736359     | 0.09484598    |
+| 8 K-NN     | 0.09917756     | 0.09610478    |
+| Regressão  | 0.20094583     | 0.20094583    |
+| Árvore     | 0.07898324     | 0.07870004    |
+| Floresta   | 0.06039642     | 0.06040035    |
 </p>
 Podemos perceber, pois, que tanto para o s dados normalizados quanto para os dados não normalizados, os melhores modelos preditivos (isto é, os que resultam em melhor previsão) são os de FLoresta aleatória e o de K-NN. 
 </p>
