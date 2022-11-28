@@ -50,7 +50,7 @@ Se você está no Bloco 3 de dados não-supervisionado e ao  realizar o plot do 
 <img src="https://user-images.githubusercontent.com/106678040/204189749-89f5a20d-cdc7-4341-85d3-a7860d043627.jpeg" width="600" height="50"/>
 
 <p align="justify"> 
-Não se preocupe! Este é um erro muito comum, se você está usando o KMeans no Sklearn! Isso pode ocorrer, pois o seu threadpoolctlde pode estar desatualizado, em muitos casos, eles se encontra na versão 2.2.0. Vamos ver como atualiza-lo? É só seguir o comando abaixo!
+Não se preocupe! Este é um erro muito comum, se você está usando o KMeans no Sklearn! Isso pode ocorrer, pois o seu threadpoolctlde pode estar desatualizado, em muitos casos, eles se encontra na versão 2.2.0. Vamos ver como atualizá-lo? É só seguir o comando abaixo!
 <img src="https://user-images.githubusercontent.com/106678040/204190495-5c518c37-5aa7-438d-bedd-15be85bc9d1f.jpeg" width="1200" height="150"/>
 </p>
 <p align="justify"> 
