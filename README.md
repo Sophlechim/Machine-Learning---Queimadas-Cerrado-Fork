@@ -186,7 +186,7 @@ O metódo de classificação utilizado foi o K-NN. Em um primeiro momento, neces
 Esse arquivo presente nosso repositório não faz parte da lista de tarefas oficial do Bloco 2, mas foi necessário para estudarmos o comportamento dos dados de maneira gráfica com a utilização de uma 'target' diferente da original, uma vez que os gráficos plotados de Modelo de Previsão X Modelo Real estavam muito estranhos e ruins. Foi escolhida, dentre as possíveis no nosso Dataframe, uma menos complexa e, supostamente, mais fácil de prever, sendo essa, então, a Precipitação.
 </p>
 <p align="justify">
-Sendo assim, separadamente, os modelos propostos no trabalho foram reproduzidos para essa nova target. Ao plotar todos os gráficos, realmente os modelos estão ruins, comom possível ver no arquivo. Surgimos assim, com algumas hipóteses sobre o que pode ter acontecido, podendo ser, inclusive, uma união de fatores:
+Sendo assim, separadamente, os modelos propostos no trabalho foram reproduzidos para essa nova target. Ao plotar todos os gráficos, realmente os modelos estão ruins para previsão, como possível ver no arquivo. Surgimos assim, com algumas hipóteses sobre o que pode ter acontecido, podendo ser, inclusive, uma união de fatores:
 </p>
 <ol>
 <h5>
