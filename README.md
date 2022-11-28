@@ -198,7 +198,10 @@ Iniciamos com o algoritmo de Análise de Componentes Principais (PCA), que reduz
 Nesse último Bloco do projeto, tivemos como último aprendizado a utilização de estratégias para encontrar os melhores hiperparâmetros pra o nosso modelo de aprendizado de máquina. Sendo essa a reta final do projeto, o nosso maior foco foi preparar o código final e oficial, que ficará disponível para acesso neste repositório, além da realização de discussões importantíssimas para o planejamento da apresentação do projeto de conclusão do segundo semestre. 
 </p>
 <details><summary><b> Validação Cruzada </b></summary>
-
+<p align="justify">
+Validação cruzada, ou cross-validation, é um método para encontrar o melhor (ou algo próximo do melhor) conjunto de hiperparâmetros para treinar um modelo. Em nosso notebook, realizamos validação k-fold e a de floresta aleatória. 
+No total, utilizando apenas esses 2 tipos de validação, realizamos 10 validações cruzadas, alternando o número de hiperparâmetros. Consideramos que melhor resultado obtido entre as validações da floresta aleatória foi o com 100 árvores e 4 CPU cores. Como visto nos blocos anteriores, nosso melhor resultado do modelo k-NN foi com o menor número possível de vizinhos, ou seja, apenas 1 vizinho. Isso se deve ao modo como nossos dados se comportam: é melhor relacionar os dados mais próximos para tentar predizer qual o risco de fogo de determinado locas. Esse fato explica o por quê do melhor pipeline ter sido o com NUM_VIZINHOS= 1
+</p>
 </details>
 
 <p align="justify">
