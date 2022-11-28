@@ -70,9 +70,12 @@ A disciplina está organizada em 4 blocos progressivos para a construção de um
 </details>
 
 ## Bloco 1
+<p align="justify">
+O primeiro bloco foi dedicado à decisão do tema do projeto e à busca de APIs para coleta dos dados necessários. Assim, nos familiarizamos com o processo de aquisição, armazenamento, tratamento e análise exploratória de dados.
+</p>
 <details><summary><b>Coleta de Dados</b></summary>
 <p align="justify">
-Durante, principalmente, as primeiras duas semanas desde a definição do nosso tema, pesquisamos intensamente por bancos de dados e APIs que nos auxiliassem no desenvolvimento do nosso sistema de aprendizado de máquina. Priorizamos dados confiáveis, organizados e bem documentados, além de facilmente manipuláveis em python. Concluímos, por fim, após discussões com nossos professores, que os dados do INPE eram de fato os mais coerentes e também os mais completos para se trabalhar, contendo neles não apenas as coordenadas das queimadas, como também o risco de fogo e sua potência radiativa associada, o bioma ao qual aquela região pertence, a precipitação, o número de dias sem chuva, entre outros.
+Durante as primeiras semanas, pesquisamos intensamente por bancos de dados e APIs pertinentes ao nosso modelo de previsão de queimadas no Cerrado. Priorizamos dados confiáveis, organizados e bem documentados, além de facilmente manipuláveis em python. Concluímos, por fim, após discussões com nossos professores, que os dados do INPE eram de fato os mais coerentes e também os mais completos para se trabalhar, contendo neles não apenas as coordenadas das queimadas, como também o risco de fogo e sua potência radiativa associada, o bioma ao qual aquela região pertence, a precipitação, o número de dias sem chuva, entre outros.
  <br>
 Coletamos, então, todos os dados de queimadas do INPE desde janeiro de 2022 até julho de 2022. Esse conjunto de dados, para nossa surpresa, não incluía somente informações sobre o Brasil, mas sobre o mundo inteiro. Por isso, na tarefa seguinte (de preparação), foi essencial que filtrássemos os dados.
 </p>
