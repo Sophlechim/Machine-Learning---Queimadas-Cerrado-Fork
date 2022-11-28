@@ -35,12 +35,10 @@ Ao longo do nosso projeto, nos deparamos com alguns problemas que foram complica
 </p>
 
 <details><summary><b>Debugging</b></summary>
-</details>
 <p align="justify">
-<h3>Arquivos:</h3> Para rodar o código em algum ambiente de desenvolvimento, cheque os procedimentos necessário para o uso de arquivos adicionais! Isso será necessário logo no início do código deste projeto, que é quando é carregado os dados usados pelo modelo.
+<h4>Arquivos:</h4> Para rodar o código em algum ambiente de desenvolvimento, cheque os procedimentos necessário para o uso de arquivos adicionais! Isso será necessário logo no início do código deste projeto, que é quando é carregado os dados usados pelo modelo.
 <p align="justify"> Por exemplo: para o caso do <b>Jupyter Notebook</b> e do <b>VSCode</b>, é necessário salvar o arquivo do código (<i>ipynb</i>) na mesma pasta dos dados (<i>csv</i>). Para o caso do <b>Google Colab</b>, é necessário realizar o upload dos dados na aba de arquivos. Logo, esse procedimento pode variar, então é bom dar uma olhada na documentação do IDE escolhido!
-</p>
-</p>
+</details>
 
 <details><summary><b>Upgrade do threadpool</b></summary>
 </details>
